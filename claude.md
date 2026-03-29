@@ -29,7 +29,7 @@
 1. AI가 프로젝트 개요, 기능 명세서 기반으로 디자인 컨셉 작성
    1. input: output/project_overview.md, output/feature.md 
    2. output: multiple concepts of images (design/concepts/image_concept_01.md, design/concepts/image_concept_02.md, ...)
-   3. todo: 이미지 뽑는법, 프롬프트 작성
+   3. todo: stitch sdk 통해서 컨셉 뽑는 prompt 작성
 2. 사람이 피드백
    1. input: user feedback
    2. output: 
@@ -41,8 +41,8 @@
 #### 디자인 명세
 1. 디자인 명세 작성
    1. input: global/output/feature.md
-   2. output: design/ 하위에 이미지 업로드
-   3. todo: 이미지 뽑는법, 프롬프트 작성
+   2. output: design/**.png
+   3. todo: stitch sdk 사용해서 필요하면 화면 명세 뽑는 프롬프트 작성
 
 #### supabase 수정
 1. supabase 
@@ -51,8 +51,9 @@
 
 #### FE 개발
 1. 기능 개발
-   1. input: global/output/feature.md, supabase/schema.md
+   1. input: global/output/feature.md, supabase/schema.md, design/resources/**
    2. output: fe feature source code
+   3. todo: fe/prompt/implement_feature.md (스펙명 인자 필수)
 
 ---
 
